@@ -1,0 +1,141 @@
+/** @format */
+body {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+.wrapper {
+  background-image: linear-gradient(
+    to right,
+    rgba(145, 141, 145, 0),
+    rgb(168, 161, 168)
+  );
+  height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.header .bitcoin {
+  width: 80px;
+  height: 80px;
+}
+.bitcoin img {
+  width: 100%;
+}
+.header .chartName {
+  font-size: 50px;
+  font-weight: bold;
+
+  font-family: Garamond, serif;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 1rem;
+  place-content: center;
+  width: 100%;
+  font-family: Tahoma, sans-serif;
+}
+.card {
+  background-color: #232428;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px -3px black;
+  transition: all 0.5 ease-in-out;
+  padding: 10px 16px;
+  max-width: 300px;
+  height: 335px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  height: 350px;
+}
+
+.card:hover .cross-mark {
+  display: block;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #b7b7b7;
+
+  font-size: 30px;
+}
+.symbolContainer {
+  padding: 8px;
+}
+.symbol {
+  padding: 16px;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body {
+  font-size: 20px;
+  color: #b7b7b7;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.rate-label {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.rate {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8a8b8f;
+}
+
+.money {
+  font-size: 18px;
+  font-weight: 600;
+  color: #dedbdb;
+}
+
+.cross-mark {
+  font-size: 18px !important;
+  font-weight: lighter !important;
+  color: #76787b;
+  align-self: flex-end;
+  display: none;
+}
+
+.updateLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #dedbdb;
+}
+
+.updateTitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #8a8b8f;
+}
+.refreshCard {
+  color: #76787b;
+  padding-top: 10px;
+
+  font-size: 1.4rem;
+  color: navy;
+}
